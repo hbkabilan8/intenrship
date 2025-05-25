@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | BubbleHouse</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 40px;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 60px 0;
+            text-align: center;
+        }
+
+        .stat-item {
+            margin: 20px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ff5a5f;
+            margin-bottom: 10px;
+        }
+
+        .team-section {
+            margin: 80px 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .team-card {
+            text-align: center;
+        }
+
+        .team-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 3px solid #ff5a5f;
+        }
+
+        .team-card h3 {
+            margin-bottom: 5px;
+        }
+
+        .team-title {
+            color: #ff5a5f;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+     
+    <header>
+        <a href="index.html" class="logo">Bubble<span>House</span></a>
+        <nav>
+            <ul>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="#" class="cta-button">Sign Up</a>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="buy.html">Buy</a></li>
+            <li><a href="rent.html">Rent</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+     
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>About BubbleHouse</h1>
+            <p>Our mission is to make real estate transactions simple, transparent, and enjoyable</p>
+        </div>
+    </section>
+
+     
+    <div class="page-content">
+        <div class="about-section">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Founded in 2015, BubbleHouse began with a simple idea: real estate doesn't have to be complicated. Our founders, experienced real estate professionals, saw an opportunity to create a more client-focused approach to buying and selling homes.</p>
+                <p>What started as a small team in Los Angeles has grown into a national real estate platform serving thousands of clients each year. Despite our growth, we've maintained our commitment to personalized service and innovative solutions.</p>
+                <p>We believe everyone deserves a stress-free real estate experience, whether they're buying their first home or selling a luxury property. Our team of dedicated professionals works tirelessly to make that belief a reality for every client.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="BubbleHouse Team">
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">8+</div>
+                <p>Years in Business</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5,000+</div>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">$2B+</div>
+                <p>In Transactions</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <p>Expert Agents</p>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>Meet Our Leadership Team</h2>
+            <p>The experienced professionals who guide our company's vision and ensure we deliver exceptional service to every client.</p>
+            
+            <div class="team-grid">
+                 
+                <div class="team-card">
+                    <img src="assets/kabilan.jpg" alt="Kabilan" class="team-img">
+                    <h3>Kabilan</h3>
+                    <p class="team-title">CEO & Founder</p>
+                    <p>With over 20 years in real estate, John leads our company with a vision for innovation and client satisfaction.</p>
+                </div>
+                
+                
+                <div class="team-card">
+                    <img src="assets/harish.jpg" alt="harish" class="team-img">
+                    <h3>Harish kannan</h3>
+                    <p class="team-title">Chief Operating Officer</p>
+                    <p>Sarah oversees our daily operations, ensuring every transaction meets our high standards of service.</p>
+                </div>
+                
+                 
+                <div class="team-card">
+                    <img src="assets/annamalai.jpg" alt="Annamalai" class="team-img">
+                    <h3>Anna Malai</h3>
+                    <p class="team-title">Chief Technology Officer</p>
+                    <p>Michael leads our tech team, developing the tools that make our platform efficient and user-friendly.</p>
+                </div>
+                
+                 
+                <div class="team-card">
+                    <img src="assets/ramar.jpg" alt="ramar" class="team-img">
+                    <h3>Ramar</h3>
+                    <p class="team-title">Director of Sales</p>
+                    <p>Emily manages our agent network and develops strategies to help our clients get the best deals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>BubbleHouse</h3>
+                <p>Making home buying and selling simple, transparent, and enjoyable since 2015.</p>
+                <div class="social-links">
+                    <a href="#">f</a>
+                    <a href="#">t</a>
+                    <a href="#">in</a>
+                    <a href="#">ig</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Buy</h3>
+                <ul>
+                    <li><a href="buy.html">Homes for Sale</a></li>
+                    <li><a href="buy.html">Open Houses</a></li>
+                    <li><a href="buy.html">New Listings</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Sell</h3>
+                <ul>
+                    <li><a href="sell.html">Sell Your Home</a></li>
+                    <li><a href="sell.html">Home Value Estimator</a></li>
+                    <li><a href="sell.html">Local Agents</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 BubbleHouse. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+         
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+         
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+         
+        const statNumbers = document.querySelectorAll('.stat-number');
+        
+        const animateStats = () => {
+            statNumbers.forEach(stat => {
+                const target = +stat.getAttribute('data-target');
+                const count = +stat.innerText.replace('+', '');
+                if (count < target) {
+                    stat.innerText = Math.ceil(count + target / 20) + '+';
+                    setTimeout(animateStats, 50);
+                } else {
+                    stat.innerText = target + '+';
+                }
+            });
+        };
+
+         
+        window.addEventListener('scroll', () => {
+            const statsSection = document.querySelector('.stats');
+            const position = statsSection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+            
+            if (position < screenPosition) {
+                animateStats();
+            }
+        });
+    </script>
+</body>
+</html>

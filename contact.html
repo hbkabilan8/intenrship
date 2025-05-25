@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BubbleHouse</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 50px 0;
+        }
+
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        .submit-btn {
+            background-color: #ff5a5f;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #e04a50;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .info-card {
+            background-color: #f5f5f5;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .info-card h3 {
+            margin-bottom: 20px;
+            color: #ff5a5f;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            margin-right: 15px;
+            color: #ff5a5f;
+            font-size: 1.2rem;
+        }
+
+        .map-container {
+            height: 400px;
+            margin-top: 50px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+         
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">Bubble<span>House</span></a>
+        <nav>
+            <ul>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="#" class="cta-button">Sign Up</a>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="buy.html">Buy</a></li>
+            <li><a href="rent.html">Rent</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </div>
+
+     
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>We're here to help with all your real estate needs</p>
+        </div>
+    </section>
+
+     
+    <div class="page-content">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="buying">Buying a Home</option>
+                            <option value="selling">Selling a Home</option>
+                            <option value="renting">Renting a Property</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="careers">Careers</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <div class="info-card">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Headquarters</h4>
+                            <p>123 Real Estate Avenue<br>Virudhunagar, PIN 626001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(310) 555-1234</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@bubblehouse.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Office Hours</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+                            <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                            <p><strong>Sunday:</strong> Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.455676489014!2d-118.44784292453778!3d34.06860607314359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc85f06fd6a1%3A0x6b8a5a5a5a5a5a5a!2s123%20Real%20Estate%20Ave%2C%20Los%20Angeles%2C%20CA%2090025!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+     
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>BubbleHouse</h3>
+                <p>Making home buying and selling simple, transparent, and enjoyable since 2015.</p>
+                <div class="social-links">
+                    <a href="#">f</a>
+                    <a href="#">t</a>
+                    <a href="#">in</a>
+                    <a href="#">ig</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Buy</h3>
+                <ul>
+                    <li><a href="buy.html">Homes for Sale</a></li>
+                    <li><a href="buy.html">Open Houses</a></li>
+                    <li><a href="buy.html">New Listings</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Sell</h3>
+                <ul>
+                    <li><a href="sell.html">Sell Your Home</a></li>
+                    <li><a href="sell.html">Home Value Estimator</a></li>
+                    <li><a href="sell.html">Local Agents</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 BubbleHouse. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
